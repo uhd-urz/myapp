@@ -12,9 +12,9 @@ from properpath import P
 
 # Only modules from rya.pre_utils should be imported.
 from rya.pre_utils import (
+    DebugMode,
     LayerLoader,
     get_logger,
-    load_basic_debug_mode,
 )
 
 # Only main app layers that don't rely on rya (except
@@ -24,7 +24,7 @@ from rya.pre_utils import (
 from .names import AppIdentity
 
 LayerLoader.logger = P.default_err_logger = get_logger()
-load_basic_debug_mode(AppIdentity.app_name, reload=True)
+DebugMode(AppIdentity.app_name).load(reload=True)
 LayerLoader.enable_bootstrap_mode(
     root_installation_dir=P(__file__).parent,
     app_name=AppIdentity.app_name,

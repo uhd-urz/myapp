@@ -76,7 +76,7 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "rya", specifier = ">=0.2.30" }]
+requires-dist = [{ name = "rya", specifier = ">=0.2.32" }]
 
 [package.metadata.requires-dev]
 dev = [{ name = "mypy", specifier = ">=1.18.2" }]
@@ -302,7 +302,7 @@ wheels = [
 
 [[package]]
 name = "rya"
-version = "0.2.30"
+version = "0.2.32"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
@@ -316,9 +316,9 @@ dependencies = [
     { name = "rich-click" },
     { name = "typer" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/77/a5/1552b8c36583d751c3d295bf346a4805387a7d8a4da0d19a0a17c9e0a8a3/rya-0.2.30.tar.gz", hash = "sha256:818f8e49c8144ca6077de338ab2e9a452575814321e8dc8d9eb88212d3aa4c3e", size = 56971, upload-time = "2025-11-16T14:41:57.106Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/62/fb/5d0d37b6bcabc694e3b3c4da2e643b62ba9fe801910dc334a42a4b6f30b0/rya-0.2.32.tar.gz", hash = "sha256:7647fe0e97d1975cc3a064e72037119e1d892e95d11245482381aefa89727558", size = 58445, upload-time = "2025-11-17T15:05:57.35Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/da/9e/04ab8f605fbd4c241359dd62f6026fd7bce8684eab7e2f8f422da5f63e86/rya-0.2.30-py3-none-any.whl", hash = "sha256:17762dcd876c6549573a1fcd8314a2a6bf5d742a1f0d9304117b12322ad23dfc", size = 94262, upload-time = "2025-11-16T14:41:55.537Z" },
+    { url = "https://files.pythonhosted.org/packages/ba/f4/44681a71ab89fa5865cec23bddece322dd1735a764314dc2b17efb7c0d9b/rya-0.2.32-py3-none-any.whl", hash = "sha256:63138eb450b01c763b926c06ebfe97b2f64ed5dfb1681dc1264f1587291abb75", size = 96384, upload-time = "2025-11-17T15:05:56.01Z" },
 ]
 
 [[package]]
