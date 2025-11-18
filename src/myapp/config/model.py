@@ -1,7 +1,6 @@
 from functools import partial
 
 from pydantic import BaseModel
-from rya.config import ConfigMaker
 from rya.styles import update_rich_click_cli_theme
 
 from ..names import run_early_list
@@ -18,8 +17,8 @@ class ConfigModel(BaseModel):
     styles: RichClickTheme = RichClickTheme()
 
 
-# Add model registers the model to Rya
-ConfigMaker.add_model(ConfigModel)
+# ConfigModel is registered in __pre_init__.register_config_model
+
 run_early_list.append(
     partial(
         update_rich_click_cli_theme,
